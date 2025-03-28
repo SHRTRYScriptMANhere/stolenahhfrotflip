@@ -1,6 +1,6 @@
-local sausageHolder = game:GetService("CoreGui"):FindFirstChild("TopBarApp"):FindFirstChild("UnibarLeftFrame").UnibarMenu["2"]
+local sausageHolder = TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu["2"]
 local originalSize = sausageHolder.Size.X.Offset
-local sSize = UDim2.new(0, originalSize + 44, 0, sausageHolder.Size.Y.Offset)
+local sSize = UDim2.new(0, originalSize + 48, 0, sausageHolder.Size.Y.Offset)
 
 local buttonFrame = Instance.new("Frame", sausageHolder)
 		buttonFrame.Size = UDim2.new(0, 48, 0, 44)
@@ -91,6 +91,5 @@ imageButton.Activated:Connect(FortniteFlips)
 
 while task.wait(0.0000000001) do
 sausageHolder.Size = sSize
-end
-
 buttonFrame.Position = UDim2.new(0, sausageHolder.Size.X.Offset - 48, 0, 0)
+end
