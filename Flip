@@ -1,4 +1,4 @@
-local sausageHolder = game.CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu:FindFirstChild("3")
+local sausageHolder = game.CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu:FindFirstChild("2")
 local originalSize = sausageHolder.Size.X.Offset
 local sSize = UDim2.new(0, originalSize + 48, 0, sausageHolder.Size.Y.Offset)
 
